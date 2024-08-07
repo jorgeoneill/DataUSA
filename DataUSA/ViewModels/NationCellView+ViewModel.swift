@@ -4,11 +4,15 @@ extension NationCellView {
     @Observable
     @MainActor
     class ViewModel: Identifiable {
+        // MARK: - Public properties
+        var displayAlert = false
+        var alertMessage = ""
+        
         // MARK: - Private(set) properties
         private(set) var title: String
         private(set) var subtitle: String
         private(set) var detailViewModel: NationDetailView.ViewModel
-
+        
         // MARK: - Lifecycle
         init(
             nation: NationData.NationItem,

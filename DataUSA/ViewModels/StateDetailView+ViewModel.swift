@@ -4,6 +4,10 @@ extension StateDetailView {
     @Observable
     @MainActor
     class ViewModel {
+        // MARK: - Public properties
+        var displayAlert = false
+        var alertMessage = ""
+
         // MARK: - Private(set) properties
         private(set) var emptyViewTitle: String?
         private(set) var footerTitle: String

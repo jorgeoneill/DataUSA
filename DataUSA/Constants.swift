@@ -34,6 +34,7 @@ enum Constants {
         static let latestItemPopulationPrefix = "Current population: "
         static let nationSectionHeader = "Nation"
         static let stateSectionHeader = "State"
+        static let okButtonTitle = "Ok"
     }
     
     enum UI {

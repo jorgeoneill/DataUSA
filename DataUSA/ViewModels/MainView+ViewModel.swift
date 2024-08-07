@@ -4,13 +4,17 @@ extension MainView {
     @Observable
     @MainActor
     class ViewModel {
+        // MARK: - Public properties
+        var displayAlert = false
+        var alertMessage = ""
+
         // MARK: - Private(set) properties
         private(set) var emptyViewTitle: String?
         private(set) var footerTitle: String
         private(set) var navigationTitle: String
         private(set) var stateCellViewModels:  [StateCellView.ViewModel]
         private(set) var nationCellViewModel:  NationCellView.ViewModel?
-        
+               
         // MARK: - Private properties
         private var states: [StateData.StateItem] = [StateData.StateItem]() {
             didSet {

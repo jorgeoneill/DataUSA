@@ -26,7 +26,7 @@ extension NationDetailView {
         }
         
         // MARK: - Public methods
-        func updateStatesList() async throws {
+        func updateNationEntries() async throws {
             guard nationEntries.isEmpty else { return }
 
             nationEntries = try await DataService.fetchNationData(historical: true)

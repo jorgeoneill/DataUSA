@@ -28,7 +28,7 @@ extension StateDetailView {
         }
         
         // MARK: - Public methods
-        func updateStatesList() async throws {
+        func updateStateEntries() async throws {
             guard stateEntries.isEmpty else { return }
 
             stateEntries = try await DataService.fetchStateData(historical: true, specificState: stateId)

@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "D2239EE9-4C65-4DA7-8216-FA0F6FC532BC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DataUSA.xcodeproj",
+      "identifier" : "F55AF6152C5ECC3200B4E4E2",
+      "name" : "DataUSA"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:DataUSA.xcodeproj",
+        "identifier" : "F55AF6252C5ECC3300B4E4E2",
+        "name" : "DataUSATests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -8,7 +8,7 @@ struct NationDetailView: View {
             Text(emptyViewTitle)
                 .task {
                     do {
-                        try await viewModel.updateStatesList()
+                        try await viewModel.updateNationEntries()
                     } catch {
                         print(error)
                     }
@@ -23,7 +23,7 @@ struct NationDetailView: View {
                     .bold()
                     .task {
                 do {
-                    try await viewModel.updateStatesList()
+                    try await viewModel.updateNationEntries()
                 } catch {
                     print(error)
                 }
